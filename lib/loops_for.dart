@@ -39,9 +39,8 @@ void forFunc(int n) {
     print(candidate);
   }
   // for each
-  candidates.forEach(
-    (candidate) =>
-        print("hello ,$candidate you have an interview tomorrow night"),
-  );
+  for (var candidate in candidates) {
+    print("hello ,$candidate you have an interview tomorrow night");
+  }
   //----> Question: Ask yourself what is the difference between forIn and forEach?
 }
